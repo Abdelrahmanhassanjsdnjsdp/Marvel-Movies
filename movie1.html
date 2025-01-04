@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpool - Movie Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 30px;
+            text-align: center;
+            background-color: rgba(28, 28, 28, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+            padding: 20px;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .movie-cover {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .movie-trailer iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #e63946;
+        }
+        .movie-info {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #e63946;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #d62828;
+        }
+        .movie-description {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deadpool & Wolverine (2024)</h1>
+
+        <div class="content-wrapper">
+            <img class="movie-cover" src="data:image/webp;base64,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" alt="Deadpool Movie Cover">
+            
+            <div class="movie-trailer">
+                <iframe src="https://www.youtube.com/embed/73_1biulkYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="movie-info">
+            <p><strong>Director:</strong> Tim Miller</p>
+            <p><strong>Cast:</strong> Ryan Reynolds, Morena Baccarin, T.J. Miller</p>
+            <p><strong>Genre:</strong> Action, Adventure, Comedy</p>
+            <p><strong>Runtime:</strong> 108 minutes</p>
+            <p><strong>Rating:</strong> R</p>
+        </div>
+
+        <div class="movie-description">
+            <p><strong>Plot:</strong> Wade Wilson, a former Special Forces operative turned mercenary, is subjected to a rogue experiment that leaves him with accelerated healing powers and a disfigured appearance. With his newfound abilities, he sets out to hunt down the man who nearly destroyed his life.</p>
+        </div>
+        <a class="button" href="https://w34.my-cima.net/play.php?vid=ba63d47de" target="_blank"> watch the movie</a>
+        <a class="button" href="https://www.imdb.com/title/tt1431045/" target="_blank">More Info on IMDb</a>
+    </div>
+</body>
+</html>
