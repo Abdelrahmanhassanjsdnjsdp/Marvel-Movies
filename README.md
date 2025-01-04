@@ -1,4 +1,4 @@
-# Narvel Movies
+# Marvel Movies
 
 ## Overview
 This repository showcases a collection of movie posters with hover effects and links to detailed movie pages. It is designed using HTML and CSS to create an interactive and visually engaging user experience. The background transitions create a dynamic and immersive environment for displaying movie information.
